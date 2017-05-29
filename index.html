@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Skoczki</title>  
+		<meta charset="utf-8">  
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">		
+		<script src="js/angular.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>	
+		<script src="js/bootstrap.min.js"></script>		
+		<script src="algorithm.js"></script>  
+		<script src="inputData.js"></script>
+	</head>
+	<body>
+		 <div id="container" class="container" ng-app="myApp" ng-controller="myCtrl">
+			<div id="firstRow" class="row">
+			  <div id="firstCol" class="col-md-7 col-sm-7">
+				<div id="EnterDate" class="row">
+				<div id="h4" class="row">					
+				<p>(coordinates of the starting and ending positions)</p>
+				</div>
+				     <div id="secod" class="col-md-3 col-sm-3">					 
+						 <table id="table" class="table table-hover ">
+							<thead>
+							 <tr>
+								<th>I.</th>
+								<th colspan="2">ST</th>
+								<th colspan="2">FN</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr ng-repeat="x in name">
+							    <td>{{ $index + 1}}.</td>
+								<td>{{ x.x_s }}</td>
+								<td>{{ x.y_s }}</td>
+								<td>{{ x.x_f }}</td>
+								<td>{{ x.y_f }}</td>
+							 </tr>						  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="secod1" class="col-md-3 col-sm-3">
+						<table id="table1" class="table table-hover ">
+							<thead>
+							 <tr>
+								<th>II.</th>
+								<th colspan="2">ST</th>
+								<th colspan="2">FN</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr ng-repeat="x in name1">
+							    <td>{{ $index + 1}}.</td>
+								<td>{{ x.x_s }}</td>
+								<td>{{ x.y_s }}</td>
+								<td>{{ x.x_f }}</td>
+								<td>{{ x.y_f }}</td>
+							 </tr>					  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="secod2" class="col-md-3 col-sm-3">
+						<table id="table2" class="table table-hover ">
+							<thead>
+							 <tr>
+								<th>III.</th>
+								<th colspan="2">ST</th>
+								<th colspan="2">FN</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr ng-repeat="x in name2">
+							    <td>{{ $index + 1}}.</td>
+								<td>{{ x.x_s }}</td>
+								<td>{{ x.y_s }}</td>
+								<td>{{ x.x_f }}</td>
+								<td>{{ x.y_f }}</td>
+							 </tr>					  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="secod3" class="col-md-3 col-sm-3">
+						<table id="table3" class="table table-hover ">
+							<thead>
+							 <tr>
+								<th>IV.</th>
+								<th colspan="2">ST</th>
+								<th colspan="2">FN</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr ng-repeat="x in name3">
+							    <td>{{ $index + 1}}.</td>
+								<td>{{ x.x_s }}</td>
+								<td>{{ x.y_s }}</td>
+								<td>{{ x.x_f }}</td>
+								<td>{{ x.y_f }}</td>
+							 </tr>						  
+							</tbody>
+						 </table>
+					 </div>							 
+				</div>
+				
+				<div id="result1" class="row">
+					<div id="h41" class="row">					
+					<p>(the sum of moves)</p>
+					</div>
+					<div id="" class="col-md-3 col-sm-3">
+						<table id="" class="table">
+							<thead>
+							 <tr>
+								<th>I</th>															
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr>
+							    <td>{{ name4}}</td>								
+							 </tr>						  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="" class="col-md-3 col-sm-3">
+						<table id="" class="table">
+							<thead>
+							 <tr>
+								<th>II</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr >
+							    <td>{{name5}}</td>								
+							 </tr>					  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="" class="col-md-3 col-sm-3">
+						<table id="" class="table">
+							<thead>
+							 <tr>
+								<th>III</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr>
+							    <td>{{ name6}}</td>								
+							 </tr>					  
+							</tbody>
+						 </table>
+					 </div>
+					 <div id="" class="col-md-3 col-sm-3">
+						<table id="" class="table">
+							<thead>
+							 <tr>
+								<th>IV</th>								
+							 </tr>							  
+							</thead>
+							<tbody>							  
+							 <tr>
+							    <td>{{name7}}</td>								
+							 </tr>						  
+							</tbody>
+						 </table>	
+					</div>
+				</div>
+			  </div>
+			  <div id="secodCol" class="col-md-5 col-sm-5">
+				<div id="result" class="row">					
+				</div>
+				<div id="board" class="row">				
+						<canvas id="myCanvas" width="480" height="480">
+							Your browser does not support canvas
+						</canvas>					
+				</div>				
+			  </div>
+			</div>
+		</div>	 
+		<script src="js/js.js"></script>   
+	</body>
+</html>
+
+
+
+

@@ -1,0 +1,18 @@
+﻿
+#h4,#h41{
+	text-align:center;
+}
+
+#EnterDate{	
+	margin-bottom:10px;
+	height:470px;
+}
+
+#result, #result1{
+	height:65px;
+}
+
+#container th, #container td{
+	padding: 3px;
+	text-align: center;
+}
